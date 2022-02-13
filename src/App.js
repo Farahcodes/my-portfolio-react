@@ -19,25 +19,6 @@ function App(){
     <Skills/>
     <Projects/>
     <Footer/>
-
-
-
-
-
-
-
-
-
-
-
-  
-
- 
-
-    
-
-
-    <script src="./js/app.js"></script>
     </main>
     )
 }
