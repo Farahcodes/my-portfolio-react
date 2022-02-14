@@ -1,4 +1,5 @@
 import React from 'react'
+import img from '../assets/images/project-3.jpeg'
 
 const Projects = ()=>{
     return(
@@ -15,7 +16,7 @@ const Projects = ()=>{
        
           <div className="project-img">
             
-            <img src="./images/project-3.jpeg" className="project-photo"/>
+            <img src={img} className="project-photo"/>
           </div>
          
           <div className="project-info">
@@ -46,7 +47,7 @@ const Projects = ()=>{
         
           <div className="project-img">
             
-            <img src="./images/project-3.jpeg" className="project-photo"/>
+            <img src={img} className="project-photo"/>
           </div>
           
           <div className="project-info">
