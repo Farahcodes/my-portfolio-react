@@ -1,4 +1,5 @@
 import React from 'react'
+import img from '../assets/images/webdeveloper.svg'
 
 const Hero = ()=>{
     return(
@@ -29,7 +30,7 @@ const Hero = ()=>{
           </ul>
         </article>
         <article className="hero-img">
-          <img src="./images/webdeveloper.svg" className="hero-photo" alt="Farah" />
+          <img src={img} className="hero-photo" alt="Farah" />
         </article>
       </div>
     </header>
