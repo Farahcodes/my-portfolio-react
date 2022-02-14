@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/images/smallerlogo.svg'
 
 const Navbar =()=>{
     return(
@@ -6,7 +7,7 @@ const Navbar =()=>{
       <div className="nav-center">
       
         <div className="nav-header">
-          <img src="./images/smallerlogo.svg" className="nav-logo" alt="nav logo" />
+          <img src={logo} className="nav-logo" alt="nav logo" />
           <button className="nav-btn" id="nav-btn">
             <i className="fas fa-bars"></i>
           </button>
