@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../assets/images/programmer.svg'
 
 const About = ()=>{
     return (
@@ -6,7 +7,7 @@ const About = ()=>{
       <div className="section-center about-center">
     
         <article className="about-img">
-          <img src="./images/programmer.svg" className="about-photo" alt="about img" />
+          <img src={img} className="about-photo" alt="about img" />
         </article>
       
         <article className="about-info">
