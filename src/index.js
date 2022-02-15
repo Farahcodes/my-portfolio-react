@@ -16,6 +16,9 @@ const ReactRouter = ()=>{
     <Router>
       <Navbar/>
       <Routes>
+      <Route exact path='/'>
+        <App/>
+      </Route>
         <Route path='/about'>
           <About/>
         </Route>
@@ -33,7 +36,6 @@ const ReactRouter = ()=>{
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
     <ReactRouter />
   </React.StrictMode>,
   document.getElementById('root')
