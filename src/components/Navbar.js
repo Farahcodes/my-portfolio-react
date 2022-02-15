@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/images/smallerlogo.svg'
+import links from '../data/nav_links.js'
 
 const Navbar =()=>{
     return(
@@ -13,7 +14,17 @@ const Navbar =()=>{
           </button>
         </div>
         
-        <ul className="nav-links">
+        {links.map((link)=>{
+          const{id,path,text} =link;
+          return (
+              <ul className='nav-links'> 
+              <li key={id} >
+                <a href={path}>{text}</a>
+              </li>
+              </ul>
+          )
+        })}
+        {/* <ul className="nav-links">
           <li>
             <a href="#about">about</a>
           </li>
@@ -23,7 +34,7 @@ const Navbar =()=>{
           <li>
             <a href="#projects">projects</a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>  
     )
