@@ -8,14 +8,14 @@ import App from './App';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Projects from './components/Projects';
-import Skills from './components/Skills'
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 const ReactRouter = ()=>{
   return(
     <Router>
       <Navbar/>
       <Routes>
-      <Route exact path='/' component={App}/>
         <Route path='/about'>
           <About/>
         </Route>
@@ -26,6 +26,7 @@ const ReactRouter = ()=>{
           <Skills/>
         </Route>
       </Routes>
+      <Footer/>
     </Router>
   )
 }
