@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//react router
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+//pages
 import './index.css';
 import App from './App'
 import Navbar from './components/Navbar';
@@ -11,32 +10,10 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 
-const ReactRouter = ()=>{
-  return(
-    <Router>
-      <Navbar/>
-      <Routes>
-      <Route exact path='/'>
-        <App/>
-      </Route>
-        <Route path='/about'>
-          <About/>
-        </Route>
-        <Route path='/projects'>
-          <Projects/>
-        </Route>
-        <Route path='/skills'>
-          <Skills/>
-        </Route>
-      </Routes>
-      <Footer/>
-    </Router>
-  )
-}
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReactRouter />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
