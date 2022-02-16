@@ -211,7 +211,7 @@ Navbar
 /* additional stuff */
 section,
 header {
-  scroll-padding-top: 5rem;
+  scroll-margin-top: 5rem;
 }
 .nav-center {
   width: 100%;
