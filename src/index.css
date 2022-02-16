@@ -200,6 +200,18 @@ Navbar
   align-items: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  /* additional stuff */
+  background: var(--clr-white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  /* color value */
+  box-shadow: 0 1px 5px var(--clr-primary-9);
+}
+/* additional stuff */
+section,
+header {
+  scroll-padding-top: 5rem;
 }
 .nav-center {
   width: 100%;
@@ -221,9 +233,9 @@ Navbar
   justify-self: end;
 }
 @media screen and (min-width: 768px) {
-  .nav {
+  /* .nav {
     background: var(--clr-primary-10);
-  }
+  } */
   .nav-btn {
     display: none;
   }
