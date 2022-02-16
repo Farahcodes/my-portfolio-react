@@ -13,17 +13,17 @@ const Navbar =()=>{
             <i className="fas fa-bars"></i>
           </button>
         </div>
-        
+        <ul className='nav-links'>
         {links.map((link)=>{
           const{id,path,text} =link;
           return (
-              <ul className='nav-links'> 
+              
               <li key={id} >
                 <a href={path}>{text}</a>
-              </li>
-              </ul>
+              </li>   
           )
         })}
+        </ul>
         {/* <ul className="nav-links">
           <li>
             <a href="#about">about</a>
