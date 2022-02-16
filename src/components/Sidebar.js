@@ -1,15 +1,25 @@
 import React from 'react'
+import links from '../data/nav_links.js'
 
 const Sidebar =()=>{
     return(
-    <aside className="sidebar" id="sidebar">
+    <aside className="sidebar show-sidebar" id="sidebar">
       <div>
         <button className="close-btn" id="close-btn">
           <i className="fas fa-times"></i>
         </button>
        
         <ul className="sidebar-links">
-          <li>
+          {links.map((link)=>{
+            const{id,path,text} =link;
+            return (
+              
+                <li key={id} >
+                  <a href={path} className="sidebar-link">{text}</a>
+                </li>   
+            )
+          })}
+          {/* <li>
             <a href="#about" className="sidebar-link">about</a>
           </li>
           <li>
@@ -17,7 +27,7 @@ const Sidebar =()=>{
           </li>
           <li>
             <a href="#projects" className="sidebar-link">projects</a>
-          </li>
+          </li> */}
         </ul>
         
         <ul className="social-icons">
