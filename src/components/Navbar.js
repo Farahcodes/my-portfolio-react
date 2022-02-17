@@ -1,15 +1,18 @@
 import React from 'react'
 import logo from '../assets/images/smallerlogo.svg'
 import links from '../data/nav_links.js'
+import { useGlobalContext } from './context'
+
 
 const Navbar =()=>{
+    const { openSidebar} = useGlobalContext();
     return(
     <nav className="nav" id="nav">
       <div className="nav-center">
       
         <div className="nav-header">
           <img src={logo} className="nav-logo" alt="nav logo" />
-          <button className="nav-btn" id="nav-btn">
+          <button onClick={openSidebar} className="nav-btn" id="nav-btn">
             <i className="fas fa-bars"></i>
           </button>
         </div>
