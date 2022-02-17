@@ -1,8 +1,11 @@
 import React from 'react'
 import links from '../data/nav_links.js'
 import socialLinks from '../data/social_links.js'
+import { useGlobalContext } from './context.js'
 
 const Sidebar =()=>{
+    const { isSidebarOpen, closeSidebar } = useGlobalContext();
+
     return(
     <aside className="sidebar show-sidebar" id="sidebar">
       <div>
