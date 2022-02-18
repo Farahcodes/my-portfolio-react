@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from '../assets/images/smallerlogo.svg'
 import links from '../data/nav_links.js'
-import { useGlobalContext } from './context'
+import { useGlobalContext } from '../context'
+
 
 
 const Navbar =()=>{
