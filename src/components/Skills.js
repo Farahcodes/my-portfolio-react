@@ -1,4 +1,5 @@
 import React from 'react'
+import skills from '../data/skills.js'
 
 const Skills = ()=>{
     return(
@@ -10,8 +11,22 @@ const Skills = ()=>{
       </div>
 
         <div className="section-center skills-center">
+
+       
+        {skills.map((skill)=>{
+          const{id,text,title,icon} = skill;
+          return(
+            <article  key={id} className='single-skill'>
+            <span className="skill-icon">
+              <i className={icon}></i>
+            </span>
+            <h4>{title}</h4>
+            <p>{text}</p>
+            </article>
+          )
+        })}
   
-          <article className="single-skill">
+          {/* <article className="single-skill">
             <span className="skill-icon">
               <i className="fab fa-html5"></i>
             </span>
@@ -33,9 +48,7 @@ const Skills = ()=>{
             </span>
             <h4>React</h4>
             <p>Able to build a modern component-based application using JSX.</p>
-          </article>
-         
-
+          </article> */}
         </div>
     </section>
     )
