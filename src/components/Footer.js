@@ -37,7 +37,7 @@ const Footer = ()=>{
         </li> */}
       </ul>
 
-      <p>&copy; <span id="date"></span> FarahCodes. all rights reserved</p>
+      <p>&copy; <span id="date">{new Date().getFullYear()}</span> FarahCodes. all rights reserved</p>
     </footer>
     )
 }
