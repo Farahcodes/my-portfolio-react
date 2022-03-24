@@ -12,7 +12,7 @@ export const getProjects = async()=>{
         content_type:'project'
     });
     const formatted_projects= projects.items.map((project)=>{
-        console.log(project)
+        console.log(project);
     });
     return formatted_projects
 };
