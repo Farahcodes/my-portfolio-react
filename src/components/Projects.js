@@ -8,7 +8,9 @@ const Projects = ()=>{
 
   useEffect(()=>{
   //fetching data
-  getProjects();
+  getProjects().then((projects)=>{
+    console.log(projects);
+  });
   },[])
     return(
     <section className="section" id="projects">
