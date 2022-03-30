@@ -29,6 +29,12 @@ const Projects = ()=>{
             <div className="project-img">
               <img src={img} className='project-photo' alt={title} />
             </div>
+
+            <div className="project-info">
+              <span className="project-number">0{index+1}.</span>
+              <h3>{title}</h3>
+              <p className="project-desc">{description}</p>
+            </div>
           </article>
         )
       })}
