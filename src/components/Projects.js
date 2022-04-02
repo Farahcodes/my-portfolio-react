@@ -31,9 +31,27 @@ const Projects = ()=>{
             </div>
 
             <div className="project-info">
+
               <span className="project-number">0{index+1}.</span>
               <h3>{title}</h3>
               <p className="project-desc">{description}</p>
+
+              <div className="project-stack">
+                {stack.map((item,index)=>{
+                  return <span key={index}>{item}</span>
+                })}
+              </div>
+
+              <div className="project-links">
+              <a href={github} className='project-link'>
+              <i className='fab fa-github-square'></i>
+              </a>
+              <a href={completeProject} className='project-link'>
+                <i className='fas fa-share-square'></i>
+              </a>
+
+
+              </div>
             </div>
           </article>
         )
