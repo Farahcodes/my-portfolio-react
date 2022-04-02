@@ -19,7 +19,7 @@ const Sidebar =()=>{
             return (
               
                 <li key={id} >
-                  <a href={path} className="sidebar-link">{text}</a>
+                  <a href={path} className="sidebar-link" onClick={closeSidebar}>{text}</a>
                 </li>   
             )
           })}
