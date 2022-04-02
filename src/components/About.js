@@ -3,7 +3,7 @@ import img from '../assets/images/programmer.svg'
 
 const About = ()=>{
     return (
-    <section className="section about" id="about">
+    <section className="section about" id="about"> 
       <div className="section-center about-center">
     
         <article className="about-img">
