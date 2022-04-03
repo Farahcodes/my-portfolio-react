@@ -18,14 +18,14 @@ const About = ()=>{
           </div>
          
           <p>
-            I am a passionate introvert who loves building things with code.
+            I am a passionate self-taught developer who loves building things with code.
             My background in both Finance and Data Analytics allowed
             me to sharpen my attention to details and ability to adapt and learn
             about new products very quickly.
           </p>
           <p>
-            With strong numerical reasoning capacity. Excellent analytical & problem solving skills. Fast learner, highly
-            performance motivated and able to work under pressure. I thrive in diverse and multicultural environment.
+            Good with numbers. Excellent analytical & problem solving skills. Fast learner, highly
+            performance motivated and able to work under pressure. I thrive in diverse and multicultural environments.
           </p>
           <p>
             When I'm not learning to code, I enjoy cooking and doing Yoga. I also have a passion for Spain: the colors, food, architecture, people and the Spanish lifestyle!
