@@ -1,32 +1,30 @@
-import React from 'react'
-import img from '../assets/images/webdeveloper.svg'
-import socialLinks from '../data/social_links.js'
+import React from "react";
+import img from "../assets/images/webdeveloper.svg";
+import socialLinks from "../data/social_links.js";
 
-const Hero = ()=>{
-    return(
-    <header className="hero" id='home'>
+const Hero = () => {
+  return (
+    <header className="hero" id="home">
       <div className="section-center hero-center">
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>i'm Farah</h1>
+          <h1>Hey ! i'm Farah</h1>
           <h4>front-end web developer</h4>
-          <a href="#about" className="btn hero-btn">about me</a>
-        
-          <ul className="social-icons hero-icons">
-            {
-              socialLinks.map((socialLink)=>{
-                const{id,url,icon} = socialLink;
-                return(
-                  <li key={id}>
-                    <a href={url} className='social-icon'>
-                      <i className={icon}></i>
-                    </a>
-                
-                  </li>
-                )
-              })
-            }
+          <a href="#about" className="btn hero-btn">
+            about me
+          </a>
 
+          <ul className="social-icons hero-icons">
+            {socialLinks.map((socialLink) => {
+              const { id, url, icon } = socialLink;
+              return (
+                <li key={id}>
+                  <a href={url} className="social-icon">
+                    <i className={icon}></i>
+                  </a>
+                </li>
+              );
+            })}
 
             {/* <li>
               <a href="https://www.linkedin.com/in/farah-fournat/" className="social-icon">
@@ -50,8 +48,7 @@ const Hero = ()=>{
         </article>
       </div>
     </header>
-
-    )
-}
+  );
+};
 
 export default Hero;
