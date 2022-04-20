@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="section-center hero-center">
         <article className="hero-info">
           <div className="underline"></div>
-          <h1>Hey ! i'm Farah</h1>
+          <h1>Hey there, i'm Farah.</h1>
           <h4>front-end web developer</h4>
           <a href="#about" className="btn hero-btn">
             about me
